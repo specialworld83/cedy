@@ -25,7 +25,7 @@ Source code is publicly available on GitHub, and automatically cloned to GitLab:
 
 ```sh
 
-$ git clone https://github.com/cedy/cedy.git
+$ git clone https://github.com/specialworld83/cedy.git
 ```
 
 
