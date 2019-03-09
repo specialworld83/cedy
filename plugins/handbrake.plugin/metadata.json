@@ -1,0 +1,17 @@
+{
+	"label": "HandBrake",
+	"description": "The open source video transcoder.",
+	"license": "GPLv2",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root pacman -S --noconfirm handbrake"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root pacman -Rdd --noconfirm handbrake"
+		},
+		"status": { "command": "" }
+	}
+}

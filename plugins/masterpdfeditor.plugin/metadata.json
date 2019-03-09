@@ -1,0 +1,18 @@
+{
+	"icon": "masterpdf",
+	"label": "Master PDF editor",
+	"description": "A convenient and smart XPS & PDF editor.",
+	"license": "Free for non-commercial use",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "sh install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root pacman -Rdd --noconfirm masterpdfeditor"
+		},
+		"status": { "command": "rpm --quiet --query master-pdf-editor" }
+	}
+}

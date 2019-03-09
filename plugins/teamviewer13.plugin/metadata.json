@@ -1,0 +1,18 @@
+{
+	"icon": "teamviewer",
+	"label": "TeamViewer 13",
+	"description": "Easy, fast and secure remote access to Windows, Mac and Linux systems.",
+	"license": "Free for non-commercial use",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root pacman -S --noconfirm teamviewer13"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root pacman -Rdd --noconfirm teamviewer13"
+		},
+		"status": { "command": "" }
+	}
+}

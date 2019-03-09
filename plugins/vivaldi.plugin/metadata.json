@@ -1,0 +1,18 @@
+{
+	"icon": "vivaldi",
+	"label": "Vivaldi",
+	"description": "An advanced browser made with the power user in mind.",
+	"license": "Proprietary",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root pacman -Rdd --noconfirm vivaldi vivaldi-ffmpeg-codecs"
+		},
+		"status": { "command": "" }
+	}
+}

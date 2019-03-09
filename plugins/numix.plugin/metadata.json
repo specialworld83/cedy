@@ -1,0 +1,18 @@
+{
+	"icon": "numix",
+	"label": "Numix themes",
+	"description": "GTK and icon themes from the Numix Project.",
+	"license": "GPLv3",
+	"category": "Themes",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "sh install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "" }
+	}
+}

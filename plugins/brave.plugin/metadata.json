@@ -1,0 +1,18 @@
+{
+	"icon": "brave",
+	"label": "Brave Browser",
+	"description": "A privacy focused browser that blocks ads and trackers by default",
+	"license": "Mozilla Public License 2.0",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "sh install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root pacman -Rdd brave-bin"
+		},
+		"status": { "command": "" }
+	}
+}

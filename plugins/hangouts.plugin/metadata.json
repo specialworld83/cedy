@@ -1,0 +1,18 @@
+{
+	"icon": "web-google-hangouts",
+	"label": "Hangouts plugin",
+	"description": "Have voice and video conversations from your computer.",
+	"license": "Freeware",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "sh install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root pacman -Rdd --noconfirm google-talkplugin"
+		},
+		"status": { "command": "" }
+	}
+}

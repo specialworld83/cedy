@@ -1,0 +1,18 @@
+{
+	"icon": "java",
+	"label": "OpenJDK Java 8 full runtime environment",
+	"description": "Allows to run applications written in the Java programming language.",
+	"license": [ "Sun License", "GPL" ],
+	"category": "Utilities",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "sh status.sh" }
+	}
+}

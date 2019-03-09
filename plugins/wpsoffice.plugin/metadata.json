@@ -1,0 +1,18 @@
+{
+	"icon": "wps-office",
+	"label": "WPS Office",
+	"description": "Simple, powerful office suite with a comfortable interface.",
+	"license": "Proprietary",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "sh install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root pacman -Rdd --noconfirm wps-office-stable wps-office-extension-english-uk-dictionary wps-office-mui-en-gb"
+		},
+		"status": { "command": "" }
+	}
+}

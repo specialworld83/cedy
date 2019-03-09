@@ -1,0 +1,19 @@
+{
+	"icon": "gitkraken",
+	"label": "GitKraken",
+	"description": "The downright luxurious Git client",
+	"license": "Freemium",
+	"proprietary": true,
+	"category": "Development Tools",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "sh install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "sh uninstall.sh"
+		},
+		"status": { "command": "" }
+	}
+}

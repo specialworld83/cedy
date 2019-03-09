@@ -1,0 +1,18 @@
+{
+	"icon": "google-play-music-desktop-player",
+	"label": "Google Play Music Desktop Player",
+	"description": "Fast and friendly client for Google Play Music",
+	"license": "MIT",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "sh install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root pacman -Rdd --noconfirm google-musicmanager"
+		},
+		"status": { "command": "" }
+	}
+}

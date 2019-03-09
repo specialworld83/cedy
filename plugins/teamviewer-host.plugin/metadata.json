@@ -1,0 +1,18 @@
+{
+	"icon": "teamviewer",
+	"label": "TeamViewer host",
+	"description": "TeamViewer Host is used for 24/7 access to remote computers, which makes it an ideal solution for uses such as remote monitoring, server maintenance, or connecting to a PC or Mac in the office or at home. ",
+	"license": "Free for non-commercial use",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root pacman -S --noconfirm teamviewer-host"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root pacman -Rdd --noconfirm teamviewer-host"
+		},
+		"status": { "command": "" }
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"icon": "vscode",
+	"label": "Visual Studio Code",
+	"description": "Open Source Text Editor from Microsoft.",
+	"license": "MIT",
+	"category": "Development Tools",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "" }
+	}
+}

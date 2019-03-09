@@ -1,0 +1,19 @@
+{
+	"icon": "java",
+	"label": "OpenJDK Java 10 development kit",
+	"description": "Development environment for building applications using the Java programming language.",
+	"license": "Sun License, GPL",
+	"proprietary": true,
+	"category": "Development Tools",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "" }
+	}
+}

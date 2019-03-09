@@ -1,0 +1,18 @@
+{
+	"icon": "google-chrome",
+	"label": "Google Chrome",
+	"description": "A fast, simple and secure web browser, built for the modern web.",
+	"license": "Freeware",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root pacman -Rdd --noconfirm google-chrome"
+		},
+		"status": { "command": "" }
+	}
+}

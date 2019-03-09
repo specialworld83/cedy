@@ -1,0 +1,18 @@
+{
+	"icon": "applications-multimedia",
+	"label": "Multimedia codecs",
+	"description": "Utilized by multimedia applications to encode or decode audio or video streams.",
+	"license": [ "BSD", "GPLv2", "LGPLv2", "GFDL" ],
+	"category": "Utilities",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root pacman -S --noconfirm gstreamer gst-plugins-bad gst-plugins-base  gst-plugins-base-libs gst-plugins-good gst-plugins-ugly xine-lib libdvdcss libdvdread dvd+rw-tools vlc lame"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root pacman -Rdd --noconfirm gstreamer gst-plugins-bad gst-plugins-base  gst-plugins-base-libs gst-plugins-good gst-plugins-ugly xine-lib libdvdcss libdvdread dvd+rw-tools vlc lame"
+		},
+		"status": { "command": "" }
+	}
+}

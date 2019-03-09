@@ -1,0 +1,18 @@
+{
+	"icon": "skype",
+	"label": "Skype",
+	"description": "Stay in touch with your family and friends for free on Skype.",
+	"license": "Adware",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root pacman -Rdd --noconfirm skypeforlinux-stable"
+		},
+		"status": { "command": "" }
+	}
+}

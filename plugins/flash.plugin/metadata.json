@@ -1,0 +1,18 @@
+{
+	"icon": "flash",
+	"label": "Adobe Flash (npapi)",
+	"description": "Browser plug-in and rich Internet application runtime for npapi enabled browser (firefox, etc)",
+	"license": "Proprietary",
+	"category": "Utilities",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root pacman -Rdd --noconfirm flashplugin"
+		},
+		"status": { "command": "" }
+	}
+}

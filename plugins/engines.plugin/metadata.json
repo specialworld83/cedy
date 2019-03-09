@@ -1,0 +1,18 @@
+{
+	"icon": "preferences-desktop-theme",
+	"label": "Theme engines",
+	"description": "Used by GTK themes to draw widgets.",
+	"license": [ "LGPLv2", "LGPLv3" ],
+	"category": "Utilities",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root pacman -S --noconfirm install gtk-engine-murrine "
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root pacman -Rdd --noconfirm remove gtk-murrine-engine "
+		},
+		"status": { "command": "" }
+	}
+}
