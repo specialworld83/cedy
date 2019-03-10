@@ -1,7 +1,4 @@
 ### Introduction
-Fedy © 2014-2018 Folks 
-Cedy © 2019 Condres OS
-
 Cedy it's a fork of Fedy software for Fedora. We have forged the software, corrected and now supports sa pacman that AUR. Some packages are installed by aur, others are located directly in the repository.
 
 Cedy lets you install multimedia codecs and additional software that Condres OS, like mp3 support, Adobe Flash, Oracle Java etc., and much more with just a few clicks.
@@ -45,3 +42,7 @@ PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with
 this program.  If not, see [gnu.org/licenses](http://www.gnu.org/licenses/).
+
+Fedy © 2014-2018 Folks 
+
+Cedy © 2019 Condres OS
