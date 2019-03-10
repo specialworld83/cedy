@@ -1,4 +1,7 @@
 ### Introduction
+Fedy © 2014-2018 Folks 
+Cedy © 2019 Condres OS
+
 Cedy it's a fork of Fedy software for Fedora. We have forged the software, corrected and now supports sa pacman that AUR. Some packages are installed by aur, others are located directly in the repository.
 
 Cedy lets you install multimedia codecs and additional software that Condres OS, like mp3 support, Adobe Flash, Oracle Java etc., and much more with just a few clicks.
@@ -16,7 +19,7 @@ Each plugin is a directory with the suffix `.plugin`, which consist of a JSON fo
 
 The plugins can run any command or scripts (`bash`, `python` etc.). In addtion to the system commands, `Cedy` provides an additional command, `run-as-root` to allow running commands (e.g.- `run-as-root touch /some/file/somewhere`) or scripts (e.g.- `run-as-root -s do-stuff.sh`) as root.
 
-Have a look at the existing plugins to know more about how to write plugins for `Fedy`.
+Have a look at the existing plugins to know more about how to write plugins for `Cedy`.
 
 ### Source code
 

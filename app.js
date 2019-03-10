@@ -8,14 +8,14 @@ const Notify = imports.gi.Notify;
 const Pango = imports.gi.Pango;
 const Lang = imports.lang;
 
-const APP_NAME = "Fedy";
+const APP_NAME = "Cedy";
 
 const Application = new Lang.Class({
     Name: APP_NAME,
 
     _init: function() {
         this.application = new Gtk.Application({
-            application_id: "org.folkswithhats.fedy",
+            application_id: "org.condres.cedy",
             flags: Gio.ApplicationFlags.FLAGS_NONE
         });
 
@@ -33,7 +33,7 @@ const Application = new Lang.Class({
             });
 
         try {
-            let icon = Gtk.IconTheme.get_default().load_icon("fedy", 48, 0);
+            let icon = Gtk.IconTheme.get_default().load_icon("cedy", 48, 0);
 
             this._window.set_icon(icon);
         } catch (e) {
@@ -372,7 +372,7 @@ const Application = new Lang.Class({
                     const notification = new Notify.Notification({
                         summary: "Task " + (status === 0 ? "completed!" : "failed!"),
                         body: plugin.label + " (" + action.label + ") " + (status === 0 ? "successfully completed." : "failed."),
-                        icon_name: "fedy",
+                        icon_name: "cedy",
                         id: this._hashString(plugin.category + plugin.label)
                     });
 
@@ -471,7 +471,7 @@ const Application = new Lang.Class({
 
             for (let item in this._plugins[category]) {
                 let plugin = this._plugins[category][item];
-                print('fedy: loading plugin ' + plugin.category + '::' + plugin.label);
+                print('cedy: loading plugin ' + plugin.category + '::' + plugin.label);
 
                 let grid = new Gtk.Grid({
                     row_spacing: 5,
