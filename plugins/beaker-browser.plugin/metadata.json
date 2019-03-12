@@ -1,0 +1,18 @@
+{
+	"icon": "beaker",
+	"label": "Beaker browser",
+	"description": "Peer-to-peer browser with tools to create and host websites",
+	"license": "MIT",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "sh install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root pacman -Rdd --noconfirm beaker-browser-bin"
+		},
+		"status": { "command": "" }
+	}
+}

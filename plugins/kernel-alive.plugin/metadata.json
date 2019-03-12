@@ -1,0 +1,18 @@
+{
+	"icon": "tux",
+	"label": "Kernel alive",
+	"description": "port of Manjaro kernel-alive, keep previous kernel modules until next reboot.",
+	"license": "GPLv3",
+	"category": "Utilities",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "sh install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root pacman -Rdd --noconfirm kernel-alive-git "
+		},
+		"status": { "command": "" }
+	}
+}
