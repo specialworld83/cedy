@@ -1,0 +1,18 @@
+{
+	"icon": "bluetooth",
+	"label": "Bluez-firmware",
+	"description": "Firmwares for Broadcom BCM203x and STLC2300 Bluetooth chips",
+	"license": "GNU General Public License v2.0",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "sh install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root pacman -Rdd --noconfirm remove bluez-firmware"
+		},
+		"status": { "command": "" }
+	}
+}
