@@ -21,7 +21,8 @@ const Application = new Lang.Class({
 
         this.application.connect("activate", Lang.bind(this, this._onActivate));
         this.application.connect("startup", Lang.bind(this, this._onStartup));
-
+        
+        
         Notify.init(APP_NAME);
     },
 
